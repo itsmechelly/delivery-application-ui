@@ -31,11 +31,44 @@
         </nav>
         <!-- Page Content-->
         <section>
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5">
-                    <div class="col-lg-6">
+            <div class="container px-4 px-lg-9">
+                <div class="row gx-4 gx-lg-9">
+                    <div class="col-lg-7">
                         <h1 class="mt-5">Delivery Application</h1>
-                        <p>la la la data data data...</p>
+                        <p>
+                            Note: This web page is only a preview to the repository on github.<br/>
+                            <!-- Backend Development is in my blood, this is the reason I developed only the server side for this application.<br/> -->
+                            <!-- I created this HTML page just for FUN and to make it more accessible and convenient for you.<br/> -->
+                            To see the Delivery Application source code <a href="https://github.com/itsmechelly/delivery-application" target="_blank">CLICK HERE!</a>
+                        </p>
+                        <p>
+                            <h4>🤔 What is the purpose of this application?</h4>
+                            This project written in Java language and Spring Framework, represent Implementation of a Delivery API containing the following functionality:<br/><br/>
+                            
+                            <h5>💬 Timeslot</h5>
+                            A delivery window containing start time, end time and supported addresses.<br/><br/>
+                            👉 The two sources below will be fetched in order to validate the timeslots:<br/>
+                            • A local static json file named <b>courierAPI.json</b> is loaded when the program is starting. This file contains the available timeslots for the upcoming week.<br/>
+                            • Courier timeslots that fall on holidays will be excluded.<br/>
+                            For this part I have used <a href="https://holidayapi.com/docs" target="_blank">HolidayAPI</a>.<br/><br/>
+                            
+                            👉 Each timeslot can be used for 2 deliveries.<br/><br/>
+                            
+                            <h5>💬 Delivery</h5>
+                            Contains status & selected timeslot.
+                            Business capacity - the system supports up to 10 deliveries per day.
+                            To make sure that the system supports 10 deliveries per day, I used Github's library named Bucket4j.<br/><br/>
+                            
+                            <h5>💬 Address</h5>
+                            I have used <a href="https://www.geoapify.com/geocoding-api" target="_blank">Geoapify API</a> to locate correct addresses into an object that holds the address data (such as: street, line1, line2, country, postcode, etc...).<br/><br/>
+                            
+                            <h5>Extra Details</h5>
+                            NOTE: This program is really simple, at this moment the program does not support concurrent requests. These days I am working on a new project to upgrade this one by using Spring WebFlux To handle concurrent requests.
+
+                            <br/><br/><br/>
+                            <h3>To see the source code <br/><a href="https://github.com/itsmechelly/delivery-application" target="_blank">please CLICK HERE!</a></h3>
+                            <br/><br/><br/><br/><br/>
+                        </p>
                     </div>
                 </div>
             </div>
